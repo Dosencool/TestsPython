@@ -15,12 +15,13 @@ while(pastrouve):
     if reponse == 1183:
         print(solution)
     elif reponse == solution:
+        points = points + 1
         print("Felicitations, tu as trouvé la solution!")
-        print("Tu as pris "+points+" avant que tu as trouvé le bon numéro!")
+        print("Tu as pris "+str(points)+" tours avant de trouver le bon numéro!")
         pastrouve = False
     elif reponse > solution:
         print("Ta réponse est trop grande!")
-        points = +1
+        points = points + 1
     elif reponse < solution:
         print("Ta réponse est trop petite")
-        points = +1
+        points = points+ 1
